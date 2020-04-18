@@ -65,7 +65,7 @@ WSGI指定了web服务器和Python web应用或web框架之间的标准接口，
 在WSGI中定义了两个角色，Web服务器端称为server或者gateway，应用程序端称为application或者framework（因为WSGI的应用程序端的规范一般都是由具体的框架来实现的）。我们下面统一使用server和application这两个术语。
 
 server端会先收到用户的请求，然后会根据规范的要求调用application端，如下图所示：
-![](image/wsgi.png)
+![](images/chapter10/wsgi.png)
 ```python
 from wsgiref.simple_server import make_server
 
